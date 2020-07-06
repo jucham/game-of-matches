@@ -1,6 +1,6 @@
 # Game Of Matches
 
-This project is an implementation of the "game of matches" in Angular. The game is playable at http://deployed.com
+This project is an implementation of the "game of matches" in Angular. The game is playable at https://game-of-matches.vercel.app/
 
 #### Game rules
 
