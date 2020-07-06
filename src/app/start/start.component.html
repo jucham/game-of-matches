@@ -1,0 +1,29 @@
+<h1>Game Of Matches </h1>
+
+<div id="rules">
+  <h2>Rules</h2>
+  <ul>
+    <li>This is a two players game.</li>
+    <li>Players are in front of a certain count of matches (which can change from one game to another).</li>
+    <li> Each turn, current player takes 1, 2 or 3 matches.</li>
+    <li> Player taking the last one wins.</li>
+  </ul>
+</div>
+
+<div id="config">
+  <h2>Configuration</h2>
+  <mat-checkbox
+    id="randomMatchCount"
+    [checked]="numberOfMatchesChangeBetweenPlays"
+    (change)="toggleNumberOfMatchesChangeBetweenPlays($event)">
+    Number of matches change from one game to another.
+  </mat-checkbox>
+</div>
+
+<div id="navigation">
+  <button id="playButton" mat-raised-button (click)="play()">Play</button>
+</div>
+
+
+
+

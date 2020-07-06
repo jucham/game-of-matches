@@ -1,0 +1,24 @@
+<div id="player">
+  <h2 id="currentPlayer">Player {{currentPlayer}}</h2>
+</div>
+
+<div id="matches">
+  <div style="display: flex;">
+    <img class="match" *ngFor="let match of matches" src="assets/img/match.gif">
+  </div>
+</div>
+
+<div id="takeButtons">
+  <p>How many matches do you take ? :</p>
+  <button *ngFor="let takeButtonId of takeButtonIds"
+          mat-raised-button
+          [attr.id]="'takeButton' + takeButtonId"
+          (click)="play(takeButtonId)">
+    {{takeButtonId}}
+  </button>
+</div>
+
+<div class="menuBar">
+  <button id="restartButton"  mat-raised-button (click)="restart()">Restart the game</button>
+  <button id="goToStartMenuButton" mat-raised-button [routerLink]="['/start']">Return to start menu</button>
+</div>

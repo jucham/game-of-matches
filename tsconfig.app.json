@@ -1,0 +1,24 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/app/start/start.component.ts",
+    "src/app/play/play.component.ts",
+    "src/app/result/result.component.ts",
+    "src/app/app-routing/app-routing.module.ts",
+    "src/app/services/game-state.service.ts",
+    "src/app/services/game-settings.model.ts",
+    "src/app/services/game-state.model.ts",
+    "src/app/app.component.ts",
+    "src/app/app.module.ts",
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
